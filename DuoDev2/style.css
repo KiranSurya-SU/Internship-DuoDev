@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff89;
+    padding: 10px;
+}
+
+nav a.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+nav a.logo-container span {
+    color: rgb(0, 0, 0);
+    margin-left: 30px;
+    text-decoration: none;
+    text-transform: none;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 35px 25px;
+    transition: all 0.5s ease;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    background-color: #0984e2;
+}
+
+section.abovefooter {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: grey;
+    color: white;
+    height: auto;
+}
+
+.contact-info {
+    width: 40%;
+}
+
+.contact-info h2, .contact-info h4 {
+    color: black;
+}
+
+.feedback-form {
+    width: 50%;
+    background-color: gray;
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+}
+
+.feedback-form h2 {
+    text-align: center;
+    color: #0984e2;
+}
+
+.feedback-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-form label {
+    margin: 10px 0 5px;
+}
+
+.feedback-form input[type="name"]{
+    width: 250px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.feedback-form input[type="email"]{
+    width: 250px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.feedback-form input[type="number"]{
+    width: 250px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.feedback-form input[type="submit"] {
+    width: 200px;
+    padding: 10px;
+    background-color: #0984e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.feedback-form input[type="submit"]:hover {
+    background-color: #0759a2;
+}
+.feedback-form label name{
+    padding: 20px;
+}
+.FirstBox{
+    margin-top: 180px;
+    height: 360px;
+    width: 300px;
+    margin-left: 20px;
+    border-style: none;
+    background-color: rgb(170, 166, 166);
+    background-image: url('logo512.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150px;
+    display: inline-block;
+    border-radius: 15px;
+}
+
+h3{
+    text-align: center;
+    color: #0984e2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.box1{
+    text-align: center;
+    justify-content: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.box2{
+    text-align: center;
+    justify-content: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.box3{
+    text-align: center;
+    justify-content: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.box4{
+    text-align: center;
+    justify-content: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.box5{
+    text-align: center;
+    justify-content: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.SecondBox {
+    height: 160px;
+    width: 250px;
+    border-style:inset;
+    background-color: rgb(226, 226, 226);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150px;
+    display: inline-block;
+    position:absolute; 
+    right: 920px; 
+    top: 250px; 
+    border-radius: 5px;
+}
+.ThirdBox {
+    height: 160px;
+    width: 250px;
+    border-style:inset;
+    background-color: rgb(226, 226, 226);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150px;
+    display: inline-block;
+    position:absolute; 
+    right: 920px; 
+    bottom: 130px;
+    border-radius: 5px;
+}
+
+.FourthBox {
+    height: 160px;
+    width: 250px;
+    border-style:inset;
+    background-color: rgb(226, 226, 226);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150px;
+    display: inline-block;
+    position:absolute; 
+    right: 650px; 
+    top: 250px; 
+    border-radius: 5px;
+}
+.FifthBox {
+    height: 160px;
+    width: 250px;
+    border-style:inset;
+    background-color: rgb(226, 226, 226);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150px;
+    display: inline-block;
+    position:absolute; 
+    right: 650px; 
+    bottom: 130px;
+    border-radius: 5px;
+}

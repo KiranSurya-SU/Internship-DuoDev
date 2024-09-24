@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform and Transition</title>
+    <style>
+        /*
+        .box{
+            width: 250px;
+            height: 100px;
+            transition: all 0.25s ease;
+            background-color: #251204;
+            animation: spinner 0.5s linear infinite;
+        }
+
+        @keyframes spinner {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }   
+        }
+            */
+        
+        .box1{
+            width: 250px;
+            height: 4100px;
+            transition: all 0.5s ease;
+            background-color: wheat;
+            animation: spinner 10s linear infinite;
+        }
+        @keyframes spinner{
+            0%{
+                transform: scale(0);
+                background-color: violet;
+            }
+            14.28571428571429%{
+                transform: scale(1);
+                background-color: indigo;
+            }
+            28.57142857142855%{
+                transform: scale(2);
+                background-color: blue;
+            }
+            42.85714285714284%{
+                transform: scale(3);
+                background-color: green;
+            }
+            57.14285714285713%{
+                transform: scale(4);
+                background-color:yellow;
+            }
+            71.42857142857142%{
+                transform: scale(5);
+                background-color:orange;
+            }
+            85.71428571428571%{
+                transform: scale(6);
+                background-color: red;
+            }
+            100%{
+                transform: scale(7);
+                background-color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <br>
+    <div class="box1"></div>
+</body>
+</html>

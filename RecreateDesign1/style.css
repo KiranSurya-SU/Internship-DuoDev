@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: #0268e2;  
+    padding:40px  
+}
+.bar1{
+    display:flex;
+}
+
+.logoutbutton{
+    margin-inline-start :1000px;;
+    padding: 10px;
+    border-radius: 100px;
+}

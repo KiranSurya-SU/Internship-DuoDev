@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body>
+    <form action = 'login.php' method = 'GET'>
+        <label for = "name1">Name</label>
+        <input type = "name" placeholder="Enter your name" id="name1" required>
+        <br>
+        <label for ="age">Age</label>
+        <input type = "number" placeholder="Enter your age" id="age" required>
+        <br>
+        
+        <label for = "dob">Date Of Birth</label>
+        <input type = "date" id="dob" required>
+        <br>
+        
+        <label for = "email">E-mail</label>
+        <input type = "email" placeholder="Enter your E-mail" id="email" required>
+        <br>
+        
+        <label for = "password">Password</label>
+        <input type = "password" placeholder="Enter your password" id= "password" required>
+        <br>
+        
+        <label for ="dept">Department</label>
+        <select>
+            <option value="cse">CSE</option>
+            <option value="ece">ECE</option>
+            <option value="it">IT</option>
+            <option value="aids">AI & DS</option>
+            <option value="mech">MECH</option>
+            <option value="eee">EEE</option>
+        </select>
+        <br>
+        
+        <label for ="year">Year</label>
+        <select>
+            <option value="1">First Year</option>
+            <option value="2">Second Year</option>
+            <option value="3">Third Year</option>
+            <option value="4">Fourth Year</option>
+        </select>
+        <br>
+        
+        <label>Gender</label>
+        <input type = "radio" name="gender" id = "r-1">
+        <label for = "r-1">Male</label>
+        <input type = "radio" name="gender" id = "r-2">
+        <label for = "r-2">Female</label> 
+        <br>
+
+        <button>SUBMIT</button>
+    </form>
+</body>
+</html>
