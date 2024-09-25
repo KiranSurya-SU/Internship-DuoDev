@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="heading-1">Hello World</h1>
+
+    <h2 class="heading-2">DDT</h2>
+    <h2 class="heading-2">Breaking Bad</h2>
+
+    <script>
+        var h1 = document.getElementById("heading-1");
+        var h2 = document.getElementsByClassName("heading-2");
+
+        h1.style.fontSize = "145px"
+        h1.style.fontFamily = "Arial"
+        h1.style.color = "red"
+
+        for (let i = 0;i<h2.length;i++){
+            h2[i] = style.color = "green";
+        }
+
+        var headings = document.getElementsByTagName("h2")
+        headings[0].innerText = "H2 - <i> 1 </i>";
+        
+        var dept = "CSE";
+        headings[1].innerHTML = "Department : <i> ${dept} </i>";
+    </script>
+
+</body>
+</html>

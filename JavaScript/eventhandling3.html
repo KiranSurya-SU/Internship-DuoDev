@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="number" placeholder="Enter the value of a" id="a">
+    <input type="number" placeholder="Enter the value of b" id="b">
+    <br>
+    <br>
+    <button id="add">Addition</button>
+    <br>
+    <br>
+    <button id="sub">Subtraction</button>
+    <br>
+    <br>
+    <button id="mul">Multiplication</button>
+    <br>
+    <br>
+    <button id="div">Division</button>
+    <br>
+    <br>
+    <button id="mod">Modulo</button>
+    <p id="answer"></p>
+    
+    <style>
+        p {
+            color: #2681e2;
+            padding: 15px;
+            font-size: 20px;
+            text-align: center;
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+
+    <script>
+        function AdditionButton() {
+            console.log("Addition Button is Clicked...!");
+            var a = Number(document.getElementById("a").value);
+            var b = Number(document.getElementById("b").value);
+            var add = a + b;
+            document.getElementById("answer").innerHTML = "Addition is " + add;
+        }
+        document.getElementById("add").addEventListener("click", AdditionButton);
+
+        function SubtractionButton() {
+            console.log("Subtraction Button is Clicked...!");
+            var a = Number(document.getElementById("a").value);
+            var b = Number(document.getElementById("b").value);
+            var sub = a - b;
+            document.getElementById("answer").innerHTML = "Subtraction is " + sub;
+        }
+                document.getElementById("sub").addEventListener("click", SubtractionButton);
+
+        function MultiplicationButton() {
+            console.log("Multiplication Button is Clicked...!");
+            var a = Number(document.getElementById("a").value);
+            var b = Number(document.getElementById("b").value);
+            var mul = a * b;
+            document.getElementById("answer").innerHTML = "Multiplication is " + mul;
+        }
+        document.getElementById("mul").addEventListener("click", MultiplicationButton);
+        function DivisionButton() {
+            console.log("Division Button is Clicked...!");
+            var a = Number(document.getElementById("a").value);
+            var b = Number(document.getElementById("b").value);
+            var div = a / b;
+            document.getElementById("answer").innerHTML = "Division is " + div;
+        }
+        document.getElementById("div").addEventListener("click", DivisionButton);
+
+        function ModuloButton() {
+            console.log("Modulo Button is Clicked...!");
+            var a = Number(document.getElementById("a").value);
+            var b = Number(document.getElementById("b").value);
+            var mod = a % b;
+            document.getElementById("answer").innerHTML = "Modulo is " + mod;
+        }
+        document.getElementById("mod").addEventListener("click", ModuloButton);
+    </script>
+
+</body>
+</html>
