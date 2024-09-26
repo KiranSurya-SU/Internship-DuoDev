@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Navigation Links </title>
+    <link rel="shortcut icon" href="RE.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div>
+            <img src="/OIP.ico" alt="Logo" width="100px">
+            <br>
+            <H1>Breaking Bad</H1>
+            <BR>
+
+        <button onclick="togglemenu()" class="menu">MENU</button>
+        </a>
+    </div>
+    <ul id = "menu">
+        <li>
+            <a href="./Home.html">Home</a>
+        </li>
+        <li>
+            <a href="./About Us.html">About Us</a>
+        </li>
+        <li>
+            <a href="./Services.html">Services</a>
+        </li>
+         <li>   
+            <a href="./Projects.html">Project</a>
+         </li>
+         <li>
+            <a href="./contact.html">Contact</a>
+        </li>
+    </ul>
+</nav>
+
+<script>
+    function togglemenu(){
+        var navbar = document.getElementById("menu")
+        if(navbar.classList.contains("active"))
+        {
+            navbar.classList.remove("active");
+        }
+        else{
+            navbar.classList.add("active");
+        }
+    }
+</script>
+</body>
+</html>
