@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ToDo List</title>
+</head>
+<body>
+    <div id="wrapper">
+        <h2>Todo List</h2>
+        <input type="text" id="input">
+        <button id="add">Add</button>
+        <div id="todoList"></div>
+    </div>
+    <script>
+        let button = document.getElementById('add');
+        let todoList = document.getElementById('todoList');
+        let input = document.getElementById('input');
+        let todos = [];
+
+        window.onload = () => {
+            todos = JSON.parse(localStorage.getItem('todos')) || [];
+            todos.forEach(todo => addTodo(todo));
+        }
+
+        button.addEventListener('click', () => {
+            if (input.value.trim()) {
+                todos.push(input.value);
+                localStorage.setItem('todos', JSON.stringify(todos));
+                addTodo(input.value);
+                input.value = '';
+            }
+        });
+
+        function addTodo(todo) {
+            let todoItem = document.createElement('div');
+            todoItem.className = 'todoItem';
+
+            let para = document.createElement('p');
+            para.innerText = todo;
+
+            let closeButton = document.createElement('span');
+            closeButton.innerHTML = "&times;";
+            closeButton.className = 'close';
+            todoItem.appendChild(para);
+            todoItem.appendChild(closeButton);
+            todoList.appendChild(todoItem);
+
+            para.addEventListener('click', () => {
+                para.style.textDecoration = 'line-through';
+            });
+
+            closeButton.addEventListener('click', () => {
+                todoList.removeChild(todoItem);
+                remove(todo);
+            });
+        }
+
+        function remove(todo) {
+            let index = todos.indexOf(todo);
+            if (index > -1) {
+                todos.splice(index, 1);
+            }
+            localStorage.setItem('todos', JSON.stringify(todos));
+        }
+    </script>
+</body>
+</html>
